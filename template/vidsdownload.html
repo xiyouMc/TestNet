@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>XMLHttpRequest上传文件</title>
+
+</head>
+<body>
+Language
+<form action="/add/" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+<select autofocus name="lan">
+    <option value="Hindi">Hindi</option>
+    <option value="Tamil">Tamil</option>
+    <option value="Mala">Mala</option>
+    <option value="Telugu">Telugu</option>
+</select>
+
+    DTR: <select autofocus>
+    <option value="is great">is great</option>
+    <option value="is less">is less</option>
+
+</select>
+
+    <input name="DTR">
+
+    play_uv_3s: <select autofocus>
+    <option value="is great">is great</option>
+    <option value="is less">is less</option>
+
+</select>
+
+    <input name="play_uv_3s">
+
+    <input type="file" name="file" enctype="multipart/form-data">
+    <input type="submit" name="submit" value="submit" onclick="submit()"/>
+
+</form>
+
+
+
+</body>
+</html>
